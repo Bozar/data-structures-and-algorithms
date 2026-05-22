@@ -29,3 +29,9 @@ func TestRandBtree(t *testing.T) {
 	n.RandBtree(42, 4, 99)
 	n.Print()
 }
+
+func TestBuildBtree(t *testing.T) {
+	n := tree.Node{}
+	n.BuildBtree([]int{1, 2, 0, 3, 4, 0, 0, 0, 5})
+	n.Print()
+}

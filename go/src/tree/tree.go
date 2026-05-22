@@ -35,6 +35,19 @@ func (n *Node) RandBtree(seed int64, height int, maxData int) []*Node {
 	return treeNodes
 }
 
+func (n *Node) BuildBtree(treeData []int) {
+	nodes := []*Node{n}
+	for _, v := range treeData {
+		nodes[0].Data = v
+		nodes[0].Left = &Node{}
+		nodes[0].Right = &Node{}
+		nodes = append(nodes, nodes[0].Left)
+		nodes = append(nodes, nodes[0].Right)
+		nodes = nodes[1:]
+	}
+	pruneBtree(n)
+}
+
 func printTree(nodes []*Node, index int) {
 	isLastLine := true
 	nextLine := make([]*Node, 0)
@@ -100,4 +113,13 @@ func subBtree(nodes []*Node, rd *rand.Rand, maxData int) ([]*Node, []*Node) {
 		nextLine = append(nextLine, v.Right)
 	}
 	return nextLine, nextNodes
+}
+
+func pruneBtree(root *Node) *Node {
+	if (root == nil) || (root.Data == 0) {
+		return nil
+	}
+	root.Left = pruneBtree(root.Left)
+	root.Right = pruneBtree(root.Right)
+	return root
 }
