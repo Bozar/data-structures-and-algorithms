@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= pkg/file
+d ?= array/basic/leader
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
