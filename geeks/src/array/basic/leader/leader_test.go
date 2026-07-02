@@ -3,38 +3,32 @@ package leader_test
 import (
 	"github.com/Bozar/data-structures-and-algorithms/geeks/src/array/basic/leader"
 
+	"fmt"
 	"testing"
 )
 
-func TestPrint(t *testing.T) {
-	input := []int{
-		16, 17, 4, 3, 5, 2,
-	}
-	want := []int{
-		17, 5, 2,
-	}
-	test(input, want, t)
-
-	input = []int{
-		1, 2, 3, 4, 5, 2,
-	}
-	want = []int{
-		5, 2,
-	}
-	test(input, want, t)
+type tData struct {
+	input []int
+	want  []int
 }
 
-func test(input []int, want []int, t *testing.T) {
-	output := leader.Print(input)
-	lenWant := len(want)
-	lenOutput := len(output)
-	if lenWant != lenOutput {
-		t.Errorf("wrong len: %d, want: %d\n", lenOutput, lenWant)
-		return
+func TestPrint(t *testing.T) {
+	data := []tData{
+		tData{
+			input: []int{16, 17, 4, 3, 5, 2},
+			want:  []int{17, 5, 2},
+		},
+		tData{
+			input: []int{1, 2, 3, 4, 5, 2},
+			want:  []int{5, 2},
+		},
 	}
-	for i, v := range want {
-		if v != output[i] {
-			t.Errorf("\nwrong: %v\nwant: %v\n", output, want)
+
+	for _, v := range data {
+		sWant := fmt.Sprintf("%v", v.want)
+		sOutput := fmt.Sprintf("%v", leader.Print(v.input))
+		if sWant != sOutput {
+			t.Errorf("\nwrong: %s\nwant: %s\n", sOutput, sWant)
 			return
 		}
 	}

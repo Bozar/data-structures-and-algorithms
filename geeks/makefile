@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/basic/leader
+d ?= array/basic/rmvDup
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
