@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/basic/rmvDup
+d ?= array/basic/rotate
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
@@ -35,7 +35,7 @@ CMD_LS_SRC := printf "src: " && ls --color -p $(DIR_SRC)
 .PHONY: all fmt vet test linux win tag \
 		init npack nfile run clean show hide unhide
 
-all: fmt vet test linux tag
+all: fmt vet test linux tag run
 
 fmt:
 	go fmt $(PATH_MAIN)
