@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/basic/rotate
+d ?= array/basic/mvZero
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
