@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/basic/mvZero
+d ?= array/basic/mkEqual
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
