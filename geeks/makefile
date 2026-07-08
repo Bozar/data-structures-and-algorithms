@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/easy/kDist
+d ?= array/easy/evGreater
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
