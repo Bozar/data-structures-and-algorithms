@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/easy/stock
+d ?= array/easy/single
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
