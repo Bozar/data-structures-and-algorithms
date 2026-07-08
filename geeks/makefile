@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= array/easy/sumSub
+d ?= array/easy/stock
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
