@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/findPair
+d ?= hash/easy/countSum
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
