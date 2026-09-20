@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/frequent
+d ?= hash/easy/findPair
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
