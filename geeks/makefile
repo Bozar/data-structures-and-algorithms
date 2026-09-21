@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/countSum
+d ?= hash/easy/countDiff
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
