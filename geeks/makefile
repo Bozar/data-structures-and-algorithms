@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/missRange
+d ?= hash/easy/missMinMax
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
