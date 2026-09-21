@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/countDiff
+d ?= hash/easy/missRange
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
