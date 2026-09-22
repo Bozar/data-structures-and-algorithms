@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/minSubset
+d ?= hash/easy/noCommon
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
