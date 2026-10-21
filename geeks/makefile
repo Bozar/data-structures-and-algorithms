@@ -2,7 +2,7 @@
 f ?=
 
 # Package directory name
-d ?= hash/easy/noCommon
+d ?= stack/easy/celebrity
 
 MOD_NAME := github.com/Bozar/data-structures-and-algorithms/geeks
 
